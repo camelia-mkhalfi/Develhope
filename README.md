@@ -10,3 +10,8 @@
 - [NAVBAR](https://github.com/camelia-mkhalfi/Develhope/tree/navbar-html)
 - [CARD](https://github.com/camelia-mkhalfi/Develhope/tree/card-html)
 - [HTML BLOG PAGE](https://github.com/camelia-mkhalfi/Develhope/tree/blogPage-html)
+- [REWRITE THE RULE](https://github.com/camelia-mkhalfi/Develhope/tree/rewrite-css)
+- [CARD WITH CSS](https://github.com/camelia-mkhalfi/Develhope/tree/card-css)
+- [NAV WITH CSS](https://github.com/camelia-mkhalfi/Develhope/tree/nav-css)
+- [FLEXBOX](https://github.com/camelia-mkhalfi/Develhope/tree/flexbox)
+- [GRID](https://github.com/camelia-mkhalfi/Develhope/tree/grid)
