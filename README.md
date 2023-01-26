@@ -15,3 +15,7 @@
 - [NAV WITH CSS](https://github.com/camelia-mkhalfi/Develhope/tree/nav-css)
 - [FLEXBOX](https://github.com/camelia-mkhalfi/Develhope/tree/flexbox)
 - [GRID](https://github.com/camelia-mkhalfi/Develhope/tree/grid)
+- [GRID PROPERTIES](https://github.com/camelia-mkhalfi/Develhope/tree/grid-properties)
+- [FLEXBOX PROPERTIES](https://github.com/camelia-mkhalfi/Develhope/tree/flexbox-properties)
+- [MEDIA QUERIES](https://github.com/camelia-mkhalfi/Develhope/tree/media-queries)
+
