@@ -1,5 +1,5 @@
 # Develhope
-## Modulo HTML
+## Modulo HTML / CSS / SASS
 ### Esercizi
 - [HEAD](https://github.com/camelia-mkhalfi/Develhope/tree/head-html)
 - [HTML tags](https://github.com/camelia-mkhalfi/Develhope/tree/tags-html)
