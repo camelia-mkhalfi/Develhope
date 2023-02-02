@@ -18,5 +18,5 @@
 - [GRID PROPERTIES](https://github.com/camelia-mkhalfi/Develhope/tree/grid-properties)
 - [FLEXBOX PROPERTIES](https://github.com/camelia-mkhalfi/Develhope/tree/flexbox-properties)
 - [MEDIA QUERIES](https://github.com/camelia-mkhalfi/Develhope/tree/media-queries)
-- [SAAS EXERCISE](https://github.com/camelia-mkhalfi/Develhope/tree/sass-exercise)
+- [SASS EXERCISE](https://github.com/camelia-mkhalfi/Develhope/tree/sass-exercise)
 
