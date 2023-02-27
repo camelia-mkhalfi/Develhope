@@ -1,0 +1,73 @@
+@use "convert-px" as f;
+
+%typeH {
+  text-align: center;
+  color: green;
+  text-decoration: f.pxToRem(1.6px) underline blue;
+}
+
+div {
+  margin: f.pxToRem(16px);
+  border: f.pxToRem(1.6px) solid red;
+  & h1 {
+    @extend %typeH;
+  }
+
+  & h2 {
+    @extend %typeH;
+    padding: 1rem;
+    border: f.pxToRem(1.6px) solid red;
+    width: 20%;
+    text-decoration: none;
+  }
+
+  & section:nth-child(even) {
+    article {
+      width: 100%;
+      font-size: f.pxToRem(24px);
+      color: green;
+      border-color: blue;
+    }
+  }
+}
+
+@mixin article-container($border-color, $font-color, $font-size) {
+  width: 24.9%;
+  height: f.pxToRem(128px);
+  align-items: center;
+  border-left: f.pxToRem(1.6px) solid $border-color;
+  border-top: f.pxToRem(1.6px) solid $border-color;
+  border-bottom: f.pxToRem(1.6px) solid $border-color;
+  font-size: f.pxToRem($font-size);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: f.pxToRem(8px);
+  justify-content: center;
+
+  & article {
+    @include article-container(green, black, 16px);
+
+    &:last-child {
+      border-right: f.pxToRem(1.6px) solid green;
+    }
+
+    & p {
+      padding: f.pxToRem(24px);
+      text-align: center;
+    }
+  }
+
+  & article:nth-child(odd) {
+    color: blue;
+  }
+
+  & article:nth-child(even) {
+    color: red;
+  }
+}
+
+
