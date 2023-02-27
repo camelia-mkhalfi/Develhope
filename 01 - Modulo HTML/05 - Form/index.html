@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+  <title>HTML: form lesson</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="author" content="Camelia Mkhalfi">
+  <meta property="og:title" content="HTML" />
+  <meta property="og:description" content="Excercise about form for HTML" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_EN" />
+
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+      <br>
+
+      <form>
+        <label for="email">Email: </label>
+        <input type="text" name="email" placeholder="Enter your email adress" required /><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" placeholder="Password" maxlength="8" required /><br><br>
+
+        <table>
+          <tr>
+            <td><label for="name">Name: </label></td>
+            <td><label for="lastname">Lastname: </label></td>
+          </tr>
+
+          <tr>
+            <td><input type="text" name="name" placeholder="Name"></td>
+
+            <td><input type="text" name="lastname" placeholder="Lastname"></td>
+          </tr>
+        </table>
+        <br>
+
+        <label for="dateBirth">Date of birth: </label>
+        <input type="date" id="date" name="date" value="11-01-2023" min="01-01-1900" max="2024-01-01"><br><br>
+
+        <label for="phone">Phone number: </label>
+        <input type="text" name="phone" placeholder="Phone number" /><br><br>
+
+        <table>
+          <tr>
+            <td><label for="choosePlane">Choosing plane: </label></td>
+          </tr>
+
+          <tr>
+            <td>
+              <select name="plane" id="plane">
+                <optgroup label="Free plane">
+                  <option value="free">Free plan</option>
+                </optgroup>
+                <optgroup label="Plane standard">
+                  <option value="1">9,99 €</option>
+                  <option value="2">49,90 €</option>
+                  <option value="3">49,90 €</option>
+                </optgroup>
+              </select>
+            </td>
+            <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+            <td> <label for="proPlane">Choose a PRO plane </label></td>
+          </tr>
+        </table>
+
+        <br>
+
+        <label for="creditCard">Credit card: </label>
+        <input type="text" name="card" placeholder="Number of your credit card" maxlength="16" /><br><br>
+
+        <table>
+          <tr>
+            <td><label for="expireCard">Expiration date: </label></td>
+            <td><label for="lastname">CVC: </label></td>
+          </tr>
+
+          <tr>
+            <td><input type="date" id="expired" name="expired" value="11-01-2023" min="01-01-1900" max="2024-01-01">
+            </td>
+            <td><input type="text" name="cvc" placeholder="CVC"></td>
+          </tr>
+        </table>
+        <br>
+
+        <label for="creditCard">Billing address: </label>
+        <input type="text" name="adress" placeholder="Address home" /><br><br>
+
+        <button>SIGN IN</button>
+        
+      </form>
+
+  </main>
+
+</body>
+
+</html>
