@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+*{ 
+    margin: 0; 
+}
+
+html {
+    font-family: 'Roboto';
+}
+
+.link-container {
+    background-color: #20242a;
+    height: 3rem;
+    position: relative;
+    width: auto;
+    padding: 1rem;
+    line-height: 3rem;
+}
+
+.search-container {
+    float: right;
+}
+
+.search-container .search-box {
+    line-height: 2rem;
+    border-radius: 0.3rem;
+    border: 0rem solid #20242a;
+}
+
+.search-box::-webkit-input-placeholder{
+    color:#575c5f;
+    padding-left:0.7rem;
+     }
+
+.search-container .btn-search:hover {
+    background: green;
+    color: white;
+    border: none;
+}
+
+.link-container .btn-search {
+    line-height: 1.9rem;
+    border-radius: 0.3rem;
+    border: 0.1rem solid #1b8654;
+    width: 5rem;
+    background: none;
+    color: #1b8654;
+}
+
+.link-container h2,
+a,
+select {
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+.link-container h2 {
+    display: inline;
+    color: white;
+}
+
+.link-container a:nth-child(2) {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.link-container a:nth-child(3) {
+    background: none;
+    color: #9b9d9f;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.link-container .btn-disabled {
+    background: none;
+    color: #575c5f;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.drop-link {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #9b9d9f;
+    font-size: 1.2rem;
+}
+
+.burger-icon {
+    display: none;
+    position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    .burger-icon {
+        visibility: visible;
+    }
+
+    .search-container,
+    .link-container a:nth-child(2),
+    .link-container a:nth-child(3),
+    .link-container select:nth-child(4),
+    .link-container button:nth-child(5) {
+        visibility: hidden;
+    }
+
+    .burger-icon {
+        position: absolute;
+        width: 2rem;
+        height: 40%;
+        display: inline;
+        right: 1rem;
+        top: 1.5rem;
+    }
+
+}
