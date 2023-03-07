@@ -29,4 +29,7 @@ promise
   })
   .catch((error) => {
     console.error(error);
+  })
+  .finally(() => {
+    console.log("\nLe promise sono state correttamente completate\n");
   });
