@@ -1,9 +1,42 @@
 <html>
-  <body>
-    <div id="container" style="display: flex; align-items: center;"></div>
-  </body>
+
+<body>
+  <div id="container" style="display: flex; align-items: center;">
+    <ul>
+      <li id="userid"></li>
+      <li id="id"></li>
+      <li id="title"></li>
+      <li id="complete"></li>
+
+    </ul>
+  </div>
+</body>
+
 </html>
 
 <script>
   // code here
+  async function getParameter() {
+    const result = await fetch("https://jsonplaceholder.typicode.com/todos/4")
+    return result;
+  }
+
+  getParameter()
+    .then((response) => response.json())
+    .then(data => {
+      const userId = data.userId;
+      const id = data.id;
+      const title = data.title;
+      const complete = data.completed;
+
+      const element = document.getElementById('userid');
+      element.innerHTML = userId;
+      const element2 = document.getElementById('id');
+      element2.innerHTML = id;
+      const element3 = document.getElementById('title');
+      element3.innerHTML = title;
+      const element4 = document.getElementById('complete');
+      element4.innerHTML = complete;
+    })
+    .catch((error) => console.log(error));
 </script>
