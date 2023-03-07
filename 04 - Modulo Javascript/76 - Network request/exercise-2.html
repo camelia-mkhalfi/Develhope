@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <div id="container" style="display: flex; align-items: center;">
+      <input type="checkbox" id="complete"/>
+      <h2 id="title"></h2>
+    </div>
+  </body>
+</html>
+
+<script>
+  // code here
+ fetch("https://jsonplaceholder.typicode.com/todos/4")
+ .then((response) => response.json())
+ .then(data => {
+  const complete = data.completed;
+  const check = document.getElementById('complete');
+  if(complete === true) check.checked = true;
+
+  const title = data.title;
+  const element = document.getElementById('title');
+  element.innerHTML = title;
+
+ })
+ .catch((error) => console.log(error));
+</script>
