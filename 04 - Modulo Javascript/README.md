@@ -1,3 +1,3 @@
 # Develhope
-## Modulo: Javascriot
+## Modulo: Javascript
 ### Esercizi
