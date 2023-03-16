@@ -10,7 +10,7 @@ async function getPokemon() {
     if (a.name < b.name) return -1;
     else return 1;
   });
-  const pokemonB = orderedPokemon.filter((pokemon) => pokemon.name.startsWith("b"));
+  const pokemonB = orderedPokemon.filter((pokemon) => pokemon.name.startsWith("m"));
   console.log(pokemonB);
 
   pokemonB.forEach((data) => {
