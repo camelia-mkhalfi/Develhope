@@ -9,7 +9,7 @@ export class Welcome extends React.Component {
         <p>
           Welcome, <strong>{this.props.name}</strong>
         </p>
-        {age != null ? <Age age={age}/> : null }
+        {age && <Age age={age}/> }
       </div>
     );
   }
