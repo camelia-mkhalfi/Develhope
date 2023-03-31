@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Sum(props){
+export function Sum({number = [3,7,1,8,1,0]}){
   const sum = (array) =>{
     let somma = 0;
     for (const key in array) {
@@ -11,11 +11,7 @@ export function Sum(props){
   return(
       <div>
         <h1>Sum numbers props</h1>
-        {props.number && <h2>The sum of the number are: {sum(props.number)}</h2>}
+        {number && <h2>The sum of the number are: {sum(number)}</h2>}
       </div>
   )
 }
-
-Sum.defaultProps = {
-  number: [3,7,1,8,1,0]
-};
