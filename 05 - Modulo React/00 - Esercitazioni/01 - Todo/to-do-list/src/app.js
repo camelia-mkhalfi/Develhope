@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export function App() {
   const [toDo, setToDo] = useState([
     { id: 1, title: "Task 1", status: false },
-    { id: 1, title: "Task 2", status: false },
+    { id: 2, title: "Task 2", status: false },
   ]);
 
   const [newTask, setNewTask] = useState("");
