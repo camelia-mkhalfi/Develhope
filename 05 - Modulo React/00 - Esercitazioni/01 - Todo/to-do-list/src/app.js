@@ -49,9 +49,18 @@ export function App() {
 
   const modifyTask = (task) => {
     deleteTask(task.id);
-    setNewTask(task.title);
+    console.log(task.id);
+    let newTasks = toDo.map((currentTask) => {
+      if (task.id === currentTask.id) {
+        setNewTask(currentTask.title);
+        currentTask.showDoneButton = false;
+      }
+      return currentTask;
+    });
+    setToDo(newTasks);
     setShowUpdateButton(true);
   }
+  
 
   return (
     <div className="container App">
