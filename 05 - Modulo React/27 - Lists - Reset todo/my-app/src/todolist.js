@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
 export function Todo() {
-  const [toDo, setToDo] = useState([
+  const initialTasks = [
     { id: 1, title: "Task 1" },
     { id: 2, title: "Task 2" },
-  ]);
+  ];
+  const [toDo, setToDo] = useState(initialTasks);
 
   const [newTask, setNewTask] = useState("");
 
@@ -22,8 +23,9 @@ export function Todo() {
     }
   };
 
-  const deleteTask = () => {
-    setToDo([]);
+  const reset = () => {
+    setToDo(initialTasks);
+
   };
 
   const handleChange = (event) => {
@@ -36,7 +38,7 @@ export function Todo() {
       <h2>ToDo</h2>
       <input value={newTask} onChange={handleChange} />
       <button onClick={addTask}> Add task </button>
-      <button onClick={deleteTask}> Cancella </button>
+      <button onClick={reset}>Reset</button>
 
       <br />
       <br />
