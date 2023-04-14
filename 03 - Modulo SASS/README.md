@@ -1,4 +1,0 @@
-# Develhope
-## Modulo SASS
-### Esercizi
-
