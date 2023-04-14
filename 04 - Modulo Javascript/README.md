@@ -1,3 +1,0 @@
-# Develhope
-## Modulo: Javascript
-### Esercizi
