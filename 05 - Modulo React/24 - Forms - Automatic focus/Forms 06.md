@@ -1,3 +1,0 @@
-Forms 06
-
-Modify the `UncontrolledLogin` component so that the `username` input is automatically focused when the compnent renders the first time.
