@@ -46,3 +46,7 @@ margin: 1px;
     display: flex;
     align-items: center;
 }
+
+.btn-primary{
+    margin: 2rem 0 0 5rem;
+}
