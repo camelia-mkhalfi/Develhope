@@ -1,1 +1,0 @@
-Start the application with the `npm start` command and open the application in your browser (the default location is `http://localhost:3000`).
