@@ -1,31 +1,21 @@
-import { CounterDisplay } from "./counterdisplay";
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-export function UseCounter() {
-  const [clickCounter, setClickCounter] = useState({
-    interval: 1000,
-    increment: 1,
-    count: 26,
-  });
+function useCounter(initialValue = 25, incrementBy = 1) {
+  const [count, setCount] = useState(initialValue);
 
-  function handleIncrement() {
-    setClickCounter({ ...clickCounter, count: clickCounter.count + clickCounter.increment });
-  };
-
-  function handleDecrement() {
-    setClickCounter({ ...clickCounter, count: clickCounter.count - clickCounter.increment });
-  };
-
-  function handleReset() {
-    setClickCounter({ interval: 1000, increment: 1, count: 26 });
+  function increment() {
+    setCount(count + incrementBy);
   }
 
-  return (
-    <div>
-      <CounterDisplay count={clickCounter.count} />
-      <button onClick={handleIncrement}>Increment</button>
-      <button onClick={handleDecrement}>Decrement</button>
-      <button onClick={handleReset}>Reset</button>
-    </div>
-  );
+  function decrement() {
+    setCount(count - incrementBy);
+  }
+
+  function reset() {
+    setCount(initialValue);
+  }
+
+  return { count, increment, decrement, reset };
 }
+
+export default useCounter;

@@ -1,9 +1,5 @@
-import { Counter } from "./counter";
+import { Display } from "./display";
 
 export function App() {
-  return (
-    <div>
-      <Counter/>
-    </div>
-  );
+  return <Display />;
 }
