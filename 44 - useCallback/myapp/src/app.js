@@ -1,5 +1,11 @@
-import { Display } from "./display";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './Routes';
 
-export function App() {
-  return <Display />;
-}
+ReactDOM.render(
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
