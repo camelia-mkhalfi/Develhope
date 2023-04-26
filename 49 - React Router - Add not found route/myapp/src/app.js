@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Link1 } from "./link1";
 import { Link2 } from "./link2";
 import { Link3 } from "./link3";
+import { NotFound } from "./notFound";
 
 export function App() {
   return (
@@ -26,6 +27,7 @@ export function App() {
           <Route exact path="/link1" element={<Link1 />} />
           <Route exact path="/link2" element={<Link2 />} />
           <Route exact path="/link3" element={<Link3 />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
