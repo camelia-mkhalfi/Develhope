@@ -1,12 +1,10 @@
 import express from "express";
-import Joi from "joi";
 import * as dotenv from "dotenv";
 import { getAll, getOnById, create, createImage, updatedById, deleteByID } from './controllers/planets.js'
 import {logIn, signUp, logOut} from "./controllers/users.js"
 import morgan from "morgan";
 import multer from "multer";
 import  "./passport.js";
-import passport from "passport"
 import authorize from "./authorize.js";
 
 
