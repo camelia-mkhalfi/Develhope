@@ -45,10 +45,6 @@ app.put('/api/planets/:id', updatedById);
 
 app.delete('/api/planets/:id', deleteByID);
 
-app.get("/protected-route", passport.authenticate("jwt", { session: false }), (req, res) => {
-  res.send("Accesso consentito solo agli utenti autenticati!");
-});
-
 app.listen(3000, () => {
   console.log(`Server is running`);
 });
